@@ -7,6 +7,7 @@ git clone --depth 1 https://github.com/AlexandreFournier/stegdetect.git
 mkdir -p bin etc man/man1 share/stegbreak
 cd stegdetect
 linux32 ./configure --prefix="$INST_DIR"
+autoreconf -f -i
 linux32 make
 linux32 make install
 cd ..

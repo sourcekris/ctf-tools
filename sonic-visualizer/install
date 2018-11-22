@@ -8,6 +8,8 @@ cd sonic-visualiser-2.5
 make -j $(nproc)
 #make install
 
+QTDIR=$QTLIBDIR/qt5/bin
+
 mkdir -p bin
 cd bin
 ln -s ../sonic-visualiser-2.5/sonic-visualiser .

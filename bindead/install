@@ -2,25 +2,39 @@
 
 INST_DIR="$PWD"
 
+case "$(lsb_release -cs)" in
+	xenial)
+		JAVA_VERSION=9
+		;;
+	cosmic)
+		JAVA_VERSION=8
+		;;
+	*)
+		JAVA_VERSION=7
+		;;
+esac
+		
+JAVA_HOME=/usr/lib/jvm/java-${JAVA_VERSION}-openjdk-amd64/jre
+
 [ -e bindead ] || git clone --depth 1 https://bitbucket.org/mihaila/bindead.git
 cd bindead
-JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre ./build.sh
+JAVA_HOME=$JAVA_HOME ./build.sh
 mvn install
 cd ..
 
 [ -e p9 ] || git clone --depth 1 https://bitbucket.org/mihaila/p9.git
 cd p9
-JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre ./build.sh
+JAVA_HOME=$JAVA_HOME ./build.sh
 unzip p9.zip
 cd ..
 
 mkdir -p bin
 cat <<END > bin/bindead
 #!/bin/bash
-JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre java -jar $INST_DIR/bindead/bindead.jar "\$@"
+JAVA_HOME=$JAVA_HOME java -jar $INST_DIR/bindead/bindead.jar "\$@"
 END
 cat <<END > bin/p9
 #!/bin/bash
-$INST_DIR/p9/p9/bin/p9 --jdkhome /usr/lib/jvm/java-7-openjdk-amd64/jre "\$@"
+$INST_DIR/p9/p9/bin/p9 --jdkhome $JAVA_HOME "\$@"
 END
 chmod 755 bin/*

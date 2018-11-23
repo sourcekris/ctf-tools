@@ -7,6 +7,9 @@ case "$(lsb_release -cs)" in
 	xenial)
 		apt-get -y install bison libtool-bin
 		;;
+	cosmic)
+		apt-get -y install bison libtool-bin
+		;;
 	*)
 		apt-get -y install bison
 		;;

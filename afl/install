@@ -14,6 +14,57 @@ if which python2 >/dev/null; then
     sed -i 's/python/python2/' ./build_qemu_support.sh
     sed -i 's!configure!configure --python=\$(which python2)!' ./build_qemu_support.sh
 fi
+
+# Patch the qemu build script so it can patch qemu before building...
+cat <<EOF > build.patch
+--- build_qemu_support.sh	2018-11-24 00:08:28.014591831 +1100
++++ 1/build_qemu_support.sh	2018-11-24 00:08:46.727752888 +1100
+@@ -117,6 +117,43 @@
+ 
+ echo "[+] Unpacking successful."
+ 
++echo "[*] Patching QEMU configure..."
++
++cat <<EOF > patches/configure.patch
++--- 1/configure 2018-11-23 23:31:29.977231080 +1100
+++++ 2/configure 2018-11-23 23:30:08.146874687 +1100
++@@ -3855,7 +3855,7 @@
++ # check if memfd is supported
++ memfd=no
++ cat > \\\$TMPC << EOF
++-#include <sys/memfd.h>
+++#include <sys/mman.h>
++
++ int main(void)
++ {
++EOF
++
++cat <<EOF > patches/util.patch
++--- 1/memfd.c	2018-11-24 00:00:50.660394101 +1100
+++++ memfd.c	2018-11-24 00:02:15.928593062 +1100
++@@ -31,9 +31,7 @@
++ 
++ #include "qemu/memfd.h"
++ 
++-#ifdef CONFIG_MEMFD
++-#include <sys/memfd.h>
++-#elif defined CONFIG_LINUX
+++#if defined CONFIG_LINUX && !defined CONFIG_MEMFD
++ #include <sys/syscall.h>
++ #include <asm/unistd.h>
++EOF
++
++cd qemu-2.10.0
++patch < ../patches/configure.patch
++cd util
++patch < ../../patches/util.patch
++cd ../../
++
+ echo "[*] Configuring QEMU for \$CPU_TARGET..."
+ 
+ ORIG_CPU_TARGET="\$CPU_TARGET"
+EOF
+patch < build.patch
 ./build_qemu_support.sh
 cd ../../
 

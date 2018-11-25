@@ -2,9 +2,18 @@
 
 [ -e jd-gui-1.4.0.jar ] || wget https://github.com/java-decompiler/jd-gui/releases/download/v1.4.0/jd-gui-1.4.0.jar
 
+case "$(lsb_release -cs)" in
+	cosmic)
+		JAVA_PATH="/usr/lib/jvm/java-8-openjdk-amd64/bin/"
+		;;
+	*)
+		JAVA_PATH=""
+		;;
+esac
+
 mkdir -p bin
 cat <<END > bin/jd-gui
 #/bin/bash -e
-java -jar $PWD/jd-gui-1.4.0.jar "\$@"
+${JAVA_PATH}java -jar $PWD/jd-gui-1.4.0.jar "\$@"
 END
 chmod 755 bin/jd-gui

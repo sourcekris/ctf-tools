@@ -1,8 +1,21 @@
 #!/bin/bash -ex
 
+case "$(lsb_release -cs)" in
+        cosmic|tara)
+                JAVA_PATH="/usr/lib/jvm/java-8-openjdk-amd64/bin/"
+                ;;
+        *)
+                JAVA_PATH=""
+                ;;
+esac
+
 wget -O ./burp.jar 'https://portswigger.net/DownloadUpdate.ashx?Product=Free'
 chmod 755 ./burp.jar
 mkdir -p bin
-cd bin
-ln -s ../burp.jar burpsuite
-cd ..
+cat <<END > bin/burpsuite
+#/bin/bash -e
+${JAVA_PATH}java -jar $PWD/burp.jar "\$@"
+END
+chmod 755 bin/burpsuite
+
+

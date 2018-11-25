@@ -5,6 +5,9 @@ case "$(lsb_release -cs)" in
 	xenial)
 		apt-get -o Dpkg::Options::="--force-overwrite" -y install openjdk-9-jre
 		;;
+	cosmic|tara)
+		apt-get -y install openjdk-8-jre
+		;;
 	*)
 		apt-get -y install openjdk-7-jre
 		;;

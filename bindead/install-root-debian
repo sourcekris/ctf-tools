@@ -5,7 +5,7 @@ case "$(lsb_release -cs)" in
 	xenial)
 		apt-get -o Dpkg::Options::="--force-overwrite" -y install maven libprotobuf-dev openjdk-9-jre openjdk-9-jdk
 		;;
-	cosmic)
+	cosmic|tara)
 		apt-get -y install maven libprotobuf-dev openjdk-8-jre openjdk-8-jdk
 		;;
 	*)

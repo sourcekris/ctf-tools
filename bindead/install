@@ -6,7 +6,7 @@ case "$(lsb_release -cs)" in
 	xenial)
 		JAVA_VERSION=9
 		;;
-	cosmic)
+	cosmic|tara)
 		JAVA_VERSION=8
 		;;
 	*)

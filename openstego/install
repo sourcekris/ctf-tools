@@ -1,0 +1,9 @@
+#!/bin/bash -ex
+
+wget https://github.com/syvaidya/openstego/releases/download/openstego-0.7.3/openstego-0.7.3.zip -O openstego.zip
+unzip openstego.zip
+rm openstego.zip
+mv openstego-0.7.3 bin
+cd bin
+chmod +x openstego.sh
+ln -s openstego.sh openstego

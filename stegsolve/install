@@ -1,7 +1,21 @@
 #!/bin/bash -ex
 
+case "$(lsb_release -cs)" in
+        cosmic|tara)
+                JAVA_PATH="/usr/lib/jvm/java-8-openjdk-amd64/bin/"
+                ;;
+        *)
+                JAVA_PATH=""
+                ;;
+esac
+
 wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar
 chmod +x stegsolve.jar
-mkdir bin
-mv stegsolve.jar bin/
+
+mkdir -p bin
+cat <<END > bin/stegsolve
+#/bin/bash -e
+${JAVA_PATH}java -jar $PWD/stegsolve.jar "\$@"
+END
+chmod 755 bin/stegsolve
 

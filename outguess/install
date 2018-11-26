@@ -1,0 +1,3 @@
+#!/bin/bash -ex
+
+# package installed w/install-root-debian only

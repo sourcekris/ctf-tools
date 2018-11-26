@@ -92,6 +92,7 @@ Installers for the following tools are included:
 | web | [sqlmap](http://sqlmap.org/) | SQL injection automation engine. | <!--tool--><!--test-->
 | web | [subbrute](https://github.com/TheRook/subbrute) | A DNS meta-query spider that enumerates DNS records, and subdomains. | <!--tool--><!--test-->
 | stego | [openstego](https://github.com/syvaidya/openstego) | Another stego tool. | <!--tool-->
+| stego | [outguess](http://manpages.ubuntu.com/manpages/xenial/man1/outguess.1.html) | Another stego tool. | <!--tool-->
 | stego | [sonic-visualizer](http://www.sonicvisualiser.org/) | Audio file visualization. | <!--tool-->
 | stego | [steganabara](http://www.caesum.com/handbook/stego.htm) | Another image steganography solver. | <!--tool--><!--test-->
 | stego | [stegdetect](http://www.outguess.org/) | Steganography detection/breaking tool. | <!--tool--><!--test-->

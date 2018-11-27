@@ -60,6 +60,7 @@ Installers for the following tools are included:
 | forensics | [exetractor](https://github.com/kholia/exetractor-clone) | Unpacker for packed Python executables. Supports PyInstaller and py2exe. | <!--tool--><!--test-->
 | forensics | [firmware-mod-kit](https://code.google.com/p/firmware-mod-kit/) | Tools for firmware packing/unpacking. | <!--tool--><!--test--><!--failing-->
 | forensics | [pdf-parser](http://blog.didierstevens.com/programs/pdf-tools/) | Tool for digging in PDF files | <!--tool--><!--test-->
+| forensics | [pdfcrack](http://pdfcrack.sourceforge.net/) | Tool for recovering passwords from PDF files | <!--tool-->
 | forensics | [peepdf](https://github.com/jesparza/peepdf) | Powerful Python tool to analyze PDF documents. | <!--tool--><!--test-->
 | forensics | [scrdec](https://gist.github.com/bcse/1834878) | A decoder for encoded Windows Scripts. | <!--tool--><!--test-->
 | forensics | [testdisk](http://www.cgsecurity.org/wiki/TestDisk) | Testdisk and photorec for file recovery. | <!--tool--><!--test-->
@@ -91,6 +92,7 @@ Installers for the following tools are included:
 | web | [mitmproxy](https://mitmproxy.org/) | CLI Web proxy and python library.  | <!--tool--><!--no-test-->
 | web | [sqlmap](http://sqlmap.org/) | SQL injection automation engine. | <!--tool--><!--test-->
 | web | [subbrute](https://github.com/TheRook/subbrute) | A DNS meta-query spider that enumerates DNS records, and subdomains. | <!--tool--><!--test-->
+| stego | [pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html) | Print info about and validate PNG files. | <!--tool-->
 | stego | [openstego](https://github.com/syvaidya/openstego) | Another stego tool. | <!--tool-->
 | stego | [outguess](http://manpages.ubuntu.com/manpages/xenial/man1/outguess.1.html) | Another stego tool. | <!--tool-->
 | stego | [sonic-visualizer](http://www.sonicvisualiser.org/) | Audio file visualization. | <!--tool-->
@@ -100,6 +102,8 @@ Installers for the following tools are included:
 | stego | [zsteg](https://github.com/zed-0xff/zsteg) | detect stegano-hidden data in PNG & BMP. | <!--tool--><!--no-test-->
 | android | [apktool](https://ibotpeaches.github.io/Apktool/) | Dissect, dis-assemble, and re-pack Android APKs | <!--tool--><!--test-->
 | android | [android-sdk](http://developer.android.com/sdk) | The android SDK (adb, emulator, etc). | <!--tool--><!--no-test-->
+| misc | [sshpass](https://linux.die.net/man/1/sshpass) | Tool to specify SSH passwords on command line. | <!--tool-->
+| misc | [sagemath](http://www.sagemath.org/) | Sage open source math language. | <!--tool-->
 | misc | [xspy](http://git.kali.org/gitweb/?p=packages/xspy.git;a=summary) | Tiny tool to spy on X sessions. | <!--tool--><!--test-->
 | misc | [z3](https://github.com/Z3Prover/z3) | Theorem prover from Microsoft Research. | <!--tool-->
 | misc | [jdgui](http://jd.benow.ca/) | Java decompiler. | <!--tool--><!--test-->

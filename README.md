@@ -110,6 +110,7 @@ Installers for the following tools are included:
 | android | [apktool](https://ibotpeaches.github.io/Apktool/) | Dissect, dis-assemble, and re-pack Android APKs | <!--tool--><!--test-->
 | android | [android-sdk](http://developer.android.com/sdk) | The android SDK (adb, emulator, etc). | <!--tool--><!--no-test-->
 | net | [scapy](https://scapy.net/) | Packet crafting in python. | <!--deb-tool-->
+| net | [zenmap](https://nmap.org/zenmap/) | Nmap GUI. | <!--deb-tool-->
 | misc | [cewl](https://digi.ninja/projects/cewl.php) | Custom wordlist generator. | <!--deb-tool-->
 | misc | [ent](http://www.fourmilab.ch/random/) | Entropy measurements. | <!--deb-tool-->
 | misc | [sshpass](https://linux.die.net/man/1/sshpass) | Tool to specify SSH passwords on command line. | <!--tool-->

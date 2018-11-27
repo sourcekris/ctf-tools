@@ -1,0 +1,5 @@
+#!/bin/bash -ex
+set -eu -o pipefail
+
+TOOL=$(basename $PWD)
+DEBIAN_FRONTEND=noninteractive apt-get -y install $TOOL

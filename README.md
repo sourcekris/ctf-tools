@@ -57,6 +57,7 @@ Installers for the following tools are included:
 | binary | [wcc](https://github.com/endrazine/wcc) |  The Witchcraft Compiler Collection is a collection of compilation tools to perform binary black magic on the GNU/Linux and other POSIX platforms. | <!--tool--><!--no-test-->
 | binary | [xrop](https://github.com/acama/xrop) | Gadget finder. | <!--tool--><!--failing-->
 | binary | [manticore](https://github.com/trailofbits/manticore) | Manticore is a prototyping tool for dynamic binary analysis, with support for symbolic execution, taint analysis, and binary instrumentation. | <!--tool--><!--no-test-->
+| binary | [wine](https://www.winehq.org/) | Run Windows binaries in Linux. | <!--deb-tool-->
 | forensics | [binwalk](https://github.com/devttys0/binwalk.git) | Firmware (and arbitrary file) analysis tool. | <!--tool--><!--test-->
 | forensics | [dislocker](http://www.hsc.fr/ressources/outils/dislocker/) | Tool for reading Bitlocker encrypted partitions. | <!--tool--><!--test-->
 | forensics | [dsniff](http://www.monkey.org/~dugsong/dsniff/) | Grabs passwords and other data from pcaps/network streams. | dsniff | <!--deb-tool-->
@@ -95,9 +96,12 @@ Installers for the following tools are included:
 | web | [commix](https://github.com/stasinopoulos/commix) | Command injection and exploitation tool. | <!--tool--><!--test-->
 | web | [dirb](http://dirb.sourceforge.net/) | Web path scanner. | <!--tool--><!--test-->
 | web | [dirsearch](https://github.com/maurosoria/dirsearch) | Web path scanner. | <!--tool--><!--test-->
+| web | [gobuster](https://github.com/OJ/gobuster) | Web path scanner. | <!--deb-tool-->
 | web | [mitmproxy](https://mitmproxy.org/) | CLI Web proxy and python library.  | <!--tool--><!--no-test-->
+| web | [nikto](https://cirt.net/Nikto2) | Web security scanning tool. | <!--deb-tool-->
 | web | [sqlmap](http://sqlmap.org/) | SQL injection automation engine. | <!--tool--><!--test-->
 | web | [subbrute](https://github.com/TheRook/subbrute) | A DNS meta-query spider that enumerates DNS records, and subdomains. | <!--tool--><!--test-->
+| web | [weevely](https://github.com/epinna/weevely3) | Webshell generator. | <!--deb-tool-->
 | stego | [pngtools](https://launchpad.net/ubuntu/+source/pngtools) | PNG's analysis tool. | <!--deb-tool-->
 | stego | [pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html) | Print info about and validate PNG files. | <!--tool-->
 | stego | [openstego](https://github.com/syvaidya/openstego) | Another stego tool. | <!--tool-->
@@ -113,8 +117,12 @@ Installers for the following tools are included:
 | net | [zenmap](https://nmap.org/zenmap/) | Nmap GUI. | <!--deb-tool-->
 | misc | [cewl](https://digi.ninja/projects/cewl.php) | Custom wordlist generator. | <!--deb-tool-->
 | misc | [ent](http://www.fourmilab.ch/random/) | Entropy measurements. | <!--deb-tool-->
+| misc | [hydra](https://sectools.org/tool/hydra/) | Multi protocol auth brute force. | <!--deb-tool-->
 | misc | [sshpass](https://linux.die.net/man/1/sshpass) | Tool to specify SSH passwords on command line. | <!--tool-->
 | misc | [sagemath](http://www.sagemath.org/) | Sage open source math language. | <!--tool-->
+| misc | [unrar](https://www.rarlab.com/rar_add.htm) | Archive tool. | <!--deb-tool-->
+| misc | [rpm2cpio](https://linux.die.net/man/8/rpm2cpio) | Extract the contents of RPM files. | <!--deb-tool-->
+| misc | [kgb](https://sourceforge.net/projects/kgbarchiver/) | Archive tool. | <!--deb-tool-->
 | misc | [xspy](http://git.kali.org/gitweb/?p=packages/xspy.git;a=summary) | Tiny tool to spy on X sessions. | <!--tool--><!--test-->
 | misc | [z3](https://github.com/Z3Prover/z3) | Theorem prover from Microsoft Research. | <!--tool-->
 | misc | [jdgui](http://jd.benow.ca/) | Java decompiler. | <!--tool--><!--test-->

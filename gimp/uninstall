@@ -1,0 +1,5 @@
+#!/bin/bash -ex
+
+TOOL=$(basename $PWD)
+
+sudo apt-get -y remove $TOOL

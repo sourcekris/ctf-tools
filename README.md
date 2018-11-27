@@ -26,6 +26,7 @@ Installers for the following tools are included:
 | binary | [gef](https://github.com/hugsy/gef) | Enhanced environment for gdb. | <!--tool--><!--no-test-->
 | binary | [honggfuzz](https://github.com/google/honggfuzz) | A general-purpose, easy-to-use fuzzer with interesting analysis options. | <!--tool--><!--test-->
 | binary | [libheap](https://github.com/cloudburst/libheap) | gdb python library for examining the glibc heap (ptmalloc) | <!--tool--><!--no-test-->
+| binary | [ltrace](https://linux.die.net/man/1/ltrace) | Library call tracer. | <!--tool-->
 | binary | [miasm](https://github.com/cea-sec/miasm) | Reverse engineering framework in Python. | <!--tool--> <!--test-->
 | binary | [one_gadget](https://github.com/david942j/one_gadget) | Magic gadget search for libc. | <!--tool--> <!--test-->
 | binary | [panda](https://github.com/moyix/panda) | Platform for Architecture-Neutral Dynamic Analysis. | <!--tool--><!--no-test-->
@@ -48,6 +49,7 @@ Installers for the following tools are included:
 | binary | [shellnoob](https://github.com/reyammer/shellnoob) | Shellcode writing helper. | <!--tool--><!--test-->
 | binary | [shellsploit](https://github.com/b3mb4m/shellsploit-framework) | Shellcode development kit. | <!--tool--><!--test-->
 | binary | [snowman](https://github.com/yegord/snowman) | Cross-architecture decompiler. | <!--tool--><!--test-->
+| binary | [strace](https://linux.die.net/man/1/strace) | Syscall tracer. | <!--tool-->
 | binary | [taintgrind](https://github.com/wmkhoo/taintgrind) | A valgrind taint analysis tool. | <!--tool-->
 | binary | [valgrind](http://valgrind.org) | A Dynamic Binary Instrumentation framwork with some built-in tools. | <!--tool--><!--test-->
 | binary | [villoc](https://github.com/wapiflapi/villoc) | Visualization of heap operations. | <!--tool--><!--test-->
@@ -57,13 +59,17 @@ Installers for the following tools are included:
 | binary | [manticore](https://github.com/trailofbits/manticore) | Manticore is a prototyping tool for dynamic binary analysis, with support for symbolic execution, taint analysis, and binary instrumentation. | <!--tool--><!--no-test-->
 | forensics | [binwalk](https://github.com/devttys0/binwalk.git) | Firmware (and arbitrary file) analysis tool. | <!--tool--><!--test-->
 | forensics | [dislocker](http://www.hsc.fr/ressources/outils/dislocker/) | Tool for reading Bitlocker encrypted partitions. | <!--tool--><!--test-->
+| forensics | [dsniff](http://www.monkey.org/~dugsong/dsniff/) | Grabs passwords and other data from pcaps/network streams. | dsniff | <!--deb-tool-->
 | forensics | [exetractor](https://github.com/kholia/exetractor-clone) | Unpacker for packed Python executables. Supports PyInstaller and py2exe. | <!--tool--><!--test-->
+| forensics | [fcrackzip](https://github.com/hyc/fcrackzip) | ZIP file password recovery. | <!--tool-->
 | forensics | [firmware-mod-kit](https://code.google.com/p/firmware-mod-kit/) | Tools for firmware packing/unpacking. | <!--tool--><!--test--><!--failing-->
+| forensics | [foremost](http://foremost.sourceforge.net/) | File carver. | `foremost` | <!--deb-tool-->
 | forensics | [pdf-parser](http://blog.didierstevens.com/programs/pdf-tools/) | Tool for digging in PDF files | <!--tool--><!--test-->
 | forensics | [pdfcrack](http://pdfcrack.sourceforge.net/) | Tool for recovering passwords from PDF files | <!--tool-->
 | forensics | [peepdf](https://github.com/jesparza/peepdf) | Powerful Python tool to analyze PDF documents. | <!--tool--><!--test-->
 | forensics | [scrdec](https://gist.github.com/bcse/1834878) | A decoder for encoded Windows Scripts. | <!--tool--><!--test-->
 | forensics | [testdisk](http://www.cgsecurity.org/wiki/TestDisk) | Testdisk and photorec for file recovery. | <!--tool--><!--test-->
+| forensics | [volatility](https://www.volatilityfoundation.org/) | Memory forensics framework. | <!--deb-tool-->
 | crypto | [cribdrag](https://github.com/SpiderLabs/cribdrag) | Interactive crib dragging tool (for crypto). | <!--tool--><!--test-->
 | crypto | [fastcoll](https://www.win.tue.nl/hashclash/) | An md5sum collision generator. | <!--tool--><!--test-->
 | crypto | [foresight](https://github.com/ALSchwalm/foresight) | A tool for predicting the output of random number generators. To run, launch "foresee". | <!--tool--><!--test-->
@@ -92,6 +98,7 @@ Installers for the following tools are included:
 | web | [mitmproxy](https://mitmproxy.org/) | CLI Web proxy and python library.  | <!--tool--><!--no-test-->
 | web | [sqlmap](http://sqlmap.org/) | SQL injection automation engine. | <!--tool--><!--test-->
 | web | [subbrute](https://github.com/TheRook/subbrute) | A DNS meta-query spider that enumerates DNS records, and subdomains. | <!--tool--><!--test-->
+| stego | [pngtools](https://launchpad.net/ubuntu/+source/pngtools) | PNG's analysis tool. | <!--deb-tool-->
 | stego | [pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html) | Print info about and validate PNG files. | <!--tool-->
 | stego | [openstego](https://github.com/syvaidya/openstego) | Another stego tool. | <!--tool-->
 | stego | [outguess](http://manpages.ubuntu.com/manpages/xenial/man1/outguess.1.html) | Another stego tool. | <!--tool-->
@@ -102,6 +109,9 @@ Installers for the following tools are included:
 | stego | [zsteg](https://github.com/zed-0xff/zsteg) | detect stegano-hidden data in PNG & BMP. | <!--tool--><!--no-test-->
 | android | [apktool](https://ibotpeaches.github.io/Apktool/) | Dissect, dis-assemble, and re-pack Android APKs | <!--tool--><!--test-->
 | android | [android-sdk](http://developer.android.com/sdk) | The android SDK (adb, emulator, etc). | <!--tool--><!--no-test-->
+| net | [scapy](https://scapy.net/) | Packet crafting in python. | <!--deb-tool-->
+| misc | [cewl](https://digi.ninja/projects/cewl.php) | Custom wordlist generator. | <!--deb-tool-->
+| misc | [ent](http://www.fourmilab.ch/random/) | Entropy measurements. | <!--deb-tool-->
 | misc | [sshpass](https://linux.die.net/man/1/sshpass) | Tool to specify SSH passwords on command line. | <!--tool-->
 | misc | [sagemath](http://www.sagemath.org/) | Sage open source math language. | <!--tool-->
 | misc | [xspy](http://git.kali.org/gitweb/?p=packages/xspy.git;a=summary) | Tiny tool to spy on X sessions. | <!--tool--><!--test-->
@@ -249,20 +259,3 @@ Good luck!
 There's a curated list of CTF tools, but without installers, here: https://github.com/apsdehal/aWEsoMe-cTf.
 
 There's a Vagrant config with a lot of the bigger frameworks here: https://github.com/thebarbershopper/epictreasure.
-
-## Tools in the official Debian/Ubuntu repos
-
-These tools are present in the Debian or Ubuntu repos (in an adequately new version).
-They're not included in ctf-tools, but are included here as notes for the author.
-
-| Category | Package | Description | Package |
-|----------|---------|-------------|---------|
-| forensics | [foremost](http://foremost.sourceforge.net/) | File carver. | `foremost` | <!--deb-tool-->
-| dsniff | [dsniff](http://www.monkey.org/~dugsong/dsniff/) | Grabs passwords and other data from pcaps/network streams. | dsniff | <!--deb-tool-->
-| stego | [pngtools](https://launchpad.net/ubuntu/+source/pngtools) | PNG's analysis tool. | <!--deb-tool-->
-
-## Tools with unofficial Debian/Ubuntu repos or debs
-
-| Category | Package | Description | Repo/deb |
-|----------|---------|-------------|----------|
-| stego | [sound-visualizer](http://www.sonicvisualiser.org/) | Audio file visualization. | [deb](http://www.sonicvisualiser.org/download.html) | <!--deb-tool-->

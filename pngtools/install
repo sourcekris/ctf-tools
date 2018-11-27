@@ -1,0 +1,12 @@
+#!/bin/bash -ex
+
+# package installed w/install-root-debian only
+
+TOOL=pnginfo
+
+if [ ! -x /usr/bin/$TOOL ]
+then
+  echo 'requires root to install exiftool. Rerun with -s.'
+  exit 1
+fi
+
